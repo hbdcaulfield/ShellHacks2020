@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Submit Page</title>
+  <title>Submission</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -35,22 +35,23 @@
     <a class="active" href="index.html">Home</a>
     <a href="how_it_works.html">How it Works</a>
     <a href="submit.html">Submit</a>
-    <a href="#about">About</a>
-  </div> 
+    <a href="reviews.html">Reviews</a>
+  </div>
   <br><br><br>
   <!-- The above form looks like this -->
 <!-- The above form looks like this -->
 <form>
   <div class="container">
     <div class="row">
-      <div class="six columns">
-        <label for="exampleEmailInput">Your email</label>
-        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-      </div>
+      <div class="row">
+        <div class="six columns">
+          <label for="buisnessName">Name of Business</label>
+          <input class="u-full-width" type="text" placeholder="Joe's Sandwiches" id="exampleEmailInput">
+        </div>
       <div class="six columns">
         <label for="exampleRecipientInput">Business Type</label>
         <select class="u-full-width" id="exampleRecipientInput">
-          <option value="Option 1">Resturant</option>
+          <option value="Option 1">Restaurant</option>
           <option value="Option 2">Store - Convenience</option>
           <option value="Option 3">Store - General</option>
           <option value="Option 4">Store - Grocery</option>
@@ -61,26 +62,69 @@
           <option value="Option 9">Other</option>
         </select>
       </div>
+    </div>
+    <div class="row">
       <div class="six columns">
-        <label for="buisnessName">Name of Business</label>
-        <input class="u-full-width" type="text" placeholder="Joe's Sandwiches" id="exampleEmailInput">
+        <label for="address">Business's Address</label>
+        <input class="u-full-width" type="text" placeholder="123 Kelp Drive, Miami FL" id="exampleAddressInput">
       </div>
     </div>
-    <label for="exampleMessage">Message</label>
-    <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-    <label class="example-send-yourself-copy">
+    <div class="row">
+      <div class="six columns">
+        <label for="exampleEmailInput">Your email</label>
+        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+        <label for="nameInput">Your Name</label>
+        <input class="u-full-width" type="text" placeholder="Joe Kelp" id="exampleNameInput">
+        <label class="example-send-yourself-copy">
+          <input type="checkbox">
+          <span class="label-body">Send a copy to yourself</span>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <label for="userRating">Rate your overall experience</label>
+        <select class="u-full-width" id="rating">
+          <option value="Option 1">Please pick a Rating</option>
+          <option value="Option 2">1 Star</option>
+          <option value="Option 3">2 Stars</option>
+          <option value="Option 4">3 Stars</option>
+          <option value="Option 5">4 Stars</option>
+          <option value="Option 6">5 Stars</option>
+        </select>
+      </div>
+    </div>
+    <label for="exampleMessage">Review</label>
+    <textarea class="u-full-width" placeholder="Write a little bit about the business and your experience. Were they following CDC and Local Government guidelines?" id="exampleMessage"></textarea>
+    <p><strong>And now some questions...</strong></p>
+    <p style="margin-top: 0;">Please select all that apply to this business.</p>
+    <label class="masks">
       <input type="checkbox">
-      <span class="label-body">Send a copy to yourself</span>
+      <span class="label-body">Masks were worn by employees.</span>
+    </label>
+    <label class="masks2">
+      <input type="checkbox">
+      <span class="label-body">masks were worn by patrons.</span>
+    </label>
+    <label class="socialDist">
+      <input type="checkbox">
+      <span class="label-body">Social Distancing was enforced</span>
+    </label>
+    <label class="">
+      <input type="checkbox">
+      <span class="label-body">Was social/physical distancing enforced?</span>
     </label>
     <input class="button-primary" type="submit" value="Submit">
   </div>
   </form>
-  
-  
-  <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-  
-  <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-  
+  <br>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <p>This website was made for ShellHacks 2020 by a team of sleepy college students</p>
+  <br>
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
