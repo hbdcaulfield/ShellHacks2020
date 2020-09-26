@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Kelp - Keeping Businesses and Communties Safe</title>
+  <title>Example Page</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -31,39 +31,38 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- test-->
   <div class="topnav">
     <a class="active" href="index.html">Home</a>
     <a href="how_it_works.html">How it Works</a>
     <a href="example.html">Example Page</a>
     <a href="#about">About</a>
   </div> 
-    <br><br><br>
-  <div class="section hero">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
-            <h1 >KELP</h1>
-            <h3 >Keeping Businesses and Communties Safe</h3>
-          <h3 class="hero-heading">Let's be safer, together</h3>
-          <a class="button button-primary">I'm a button!</a>
-        </div>
-        <div class="one-half column">
-          <img class="phone" src="https://images.wsj.net/im-206679?width=1280&size=1.33333333" style="float:right;width:auto;height:auto;"> 
-        </div>
+  <br><br><br>
+  <!-- The above form looks like this -->
+<form>
+    <div class="row">
+      <div class="six columns">
+        <label for="exampleEmailInput">Your email</label>
+        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+      </div>
+      <div class="six columns">
+        <label for="exampleRecipientInput">Reason for contacting</label>
+        <select class="u-full-width" id="exampleRecipientInput">
+          <option value="Option 1">Questions</option>
+          <option value="Option 2">Admiration</option>
+          <option value="Option 3">Can I get your number?</option>
+        </select>
       </div>
     </div>
-  </div>
-
-  <br><br><br>
-
-  <div class="section get-help">
-    <div class="container">
-      <h3 class="section-heading">Our Mission</h3>
-      <!-- Feel Free to edit -->
-      <p class="section-description">We want to bring accountability to businesses during these hard times in order to keep everyone safe.</p>
-    </div>
-  </div>
+    <label for="exampleMessage">Message</label>
+    <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+    <label class="example-send-yourself-copy">
+      <input type="checkbox">
+      <span class="label-body">Send a copy to yourself</span>
+    </label>
+    <input class="button-primary" type="submit" value="Submit">
+  </form>
+  
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
