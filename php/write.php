@@ -1,11 +1,15 @@
 <?php
-$txt = "data.txt"; 
-$fh = fopen($txt, 'w+'); 
-if (isset($_POST['field1']) && isset($_POST['field2'])) { // check if both fields are set
-   $txt=$_POST['field1'].' - '.$_POST['field2']; 
-   file_put_contents('data.txt',$txt."\n",FILE_APPEND); // log to data.txt 
-   exit();
+if(isset($_POST['BusName']) && isset($_POST['BusAdd'])) {
+    $data = $_POST['BusName'] . '-' . $_POST['BusAdd'] . "\r\n";
+    $ret = file_put_contents('data.txt', $data, FILE_APPEND | LOCK_EX);
+    if($ret === false) {
+        die('There was an error writing this file');
+    }
+    else {
+        echo "$ret bytes written to file";
+    }
 }
-    fwrite($fh,$txt); // Write information to the file
-    fclose($fh); // Close the file
-    ?>
+else {
+   die('no post data to process');
+}
+?>
