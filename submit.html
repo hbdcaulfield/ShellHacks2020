@@ -40,13 +40,13 @@
   <br><br><br>
   <!-- The above form looks like this -->
 <!-- The above form looks like this -->
-<form>
+<form method="post">
   <div class="container">
     <div class="row">
       <div class="row">
-        <div class="six columns">
+        <div class="six columns" method="post">
           <label for="buisnessName">Name of Business</label>
-          <input class="u-full-width" type="text" name="BusName" placeholder="Joe's Sandwiches" id="exampleEmailInput">
+          <input class="u-full-width" type="text" name="BusName" placeholder="Joe's Sandwiches" id="busName">
         </div>
       <div class="six columns">
         <label for="exampleRecipientInput">Business Type</label>
@@ -66,7 +66,7 @@
     <div class="row">
       <div class="six columns">
         <label for="address">Business's Address</label>
-        <input class="u-full-width" type="text" placeholder="123 Kelp Drive, Miami FL" id="exampleAddressInput">
+        <input class="u-full-width" type="text" placeholder="123 Kelp Drive, Miami FL" name="BusAdd" id="busAdd">
       </div>
     </div>
     <div class="row">
@@ -130,7 +130,7 @@
       <input type="checkbox">
       <span class="label-body">Masks were not worn by Employees.</span>
     </label>
-    <a class="button button-primary" href="thanks.html">Submit</a>
+    <input class="button-primary" type="submit" href="thanks.html" value="Submit">
   </div>
   </form>
   <br>
