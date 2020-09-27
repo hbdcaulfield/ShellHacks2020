@@ -1,8 +1,8 @@
 /* this is a test */
-.steps{
-    text-align: center;
+.steps li {
+  text-align: center;
 }
 .mysection {
-    background-color: #06D6A0;
-    height: auto;
- }
+  background-color: #06d6a0;
+  height: auto;
+}
